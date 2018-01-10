@@ -30,7 +30,7 @@ function SaveUser(e) {
   let birthDate = form.find('[name=birthDate]').val();
   let address = form.find('[name=address]').val();
   let phone = form.find('[name=phone]').val();
-  let email = form.find('[name=phone]').val();
+  let email = form.find('[name=email]').val();
   let radioButtons = form.find('[name=gender]').toArray();
   let gender;
   radioButtons.forEach(b => {

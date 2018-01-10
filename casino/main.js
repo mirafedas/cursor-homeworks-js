@@ -190,7 +190,7 @@ function takeMoneyFromMachine(e) {
 
   let moneyToTake = parseInt(prompt('Enter how much money you want to take:'));
   if(!moneyToTake || moneyToTake < 0 || moneyToTake > moneyFromMachine) {
-    alert('There is now so much money in machine or wrong number');
+    alert('Error: not enought money in the casino, or you have inputted a wrong number');
     return;
   }
   casino.slotMachines[id].money -= moneyToTake;

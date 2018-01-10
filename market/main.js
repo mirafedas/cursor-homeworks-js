@@ -86,6 +86,6 @@ function updateUI() {
     totalWeight += g.getWeight();
     totalPrice += g.getPrice();
   });
-  document.getElementById('totalWeight').innerText = totalWeight;
-  document.getElementById('totalPrice').innerText = totalPrice;
+   document.getElementById('totalWeight').innerText = totalWeight.toFixed(2);;
+   document.getElementById('totalPrice').innerText = totalPrice.toFixed(2);;
 }

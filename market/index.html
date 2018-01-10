@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src='main.js' type='text/javascript'></script>
+    <title>Market</title>
+  </head>
+  <body>
+    <div>
+      <h3>Market list:</h3>
+      <div id="list"></div>
+    </div> 
+    <form onsubmit="Buy(event)" method='post'>
+      <input placeholder='item name' id='item' type='text'>
+      <input type='submit' value='Buy'>
+    </form>
+    <div>
+      <h3>Buyed product:</h3>
+      <div style="display: flex; flex-direction: column; width: 500px; text-align: center" id="char">
+        <div style="display: flex; flex-direction: row">
+          <div style="border: 1px solid; width: 30px">#</div>
+          <div style="border: 1px solid; width: 120px">Product name</div>
+          <div style="border: 1px solid; width: 100px">Weight</div>
+          <div style="border: 1px solid; width: 100px">Price</div>
+        </div>
+      </div>
+      <div style='display: flex; flex-direction: row; padding-left: 100px'>
+        <b>Total weight:</b><div id='totalWeight' style='padding-right: 50px'></div>
+        <b>Total price:</b><div id='totalPrice'></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -47,7 +47,7 @@ function play(e) {
   let machine = $(e.target);
   let moneyToPlay = parseInt(machine.next().val());
   machine.next().val(moneyToPlay);
-  if (moneyToPlay <= 0) {
+  if (moneyToPlay <= 0 || !moneyToPlay) {
     alert('Please put in coin to play!');
     return;
   }

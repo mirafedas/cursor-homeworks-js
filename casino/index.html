@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script></script>
+    <script src='main.js' type='text/javascript'></script>
+    <link rel='stylesheet' href='style.css'>
+    <title>Casino</title>
+  </head>
+  <body>
+    <h3>Casino</h3>
+    <div id='init'>
+      <input placeholder='Number of slot Machine' type='number' name='slotMachine'>
+      <input placeholder='Count of money' type='number' name='money'>
+      <input value='Render' type='button' onclick='createCasino()'>
+    </div>
+    <div id='casinoAction' style='display: none; margin-bottom: 50px'>
+      <input type='button' value='add machine' onclick='addSlotMachine()'>
+      <input type='button' value='machine number' onclick='getMachinesNumber()'>
+      <input type='button' value='money count' onclick='getMoneyCount()'>
+      <input type='button' value='take money away' onclick='takeMoneyFromCasino()'>
+    </div>
+    <div id='slotMachines'>
+      
+    </div>
+  </body>
+</html>
